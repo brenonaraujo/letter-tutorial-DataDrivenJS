@@ -1,0 +1,255 @@
+.crosslikes {
+     margin-top:-40px;
+}
+ul {
+    list-style: none;
+}
+body, li, ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    margin: 50px 0;
+    font-family: 'Merriweather', serif;
+    text-align: center; 
+}
+h1 span {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans;
+    font-size: 1.1em;
+    border-bottom: 4px solid;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+.wrapper {
+    margin: 10px;
+}
+.wrapper > .content {
+    display: flex;
+    position: relative;
+}
+.options {
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: 40px;
+}
+.options a {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: black;
+    font-weight: 600;
+    padding: 0 5px;
+    margin: 0 2px;
+}
+.options a:hover {
+    background: #ff3669;
+    color: white;
+}
+.options a.active {
+    background: black;
+    color:white;
+    border: 1px solid black;
+}
+.filters {
+    min-width: 150px;
+}
+.filters a { 
+    color: black;
+}
+.items {
+    margin: 0 150px;
+    transition: all;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    opacity: 1;
+}
+.items.initial {
+    opacity: 0;
+}
+.items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.items li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px 0;
+    position: relative;
+}
+.items li a {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+    line-height: 180px;
+    font-size: 50px;
+    text-decoration: none;
+}
+.items li a:hover {
+    font-size: 80px;
+}
+.items .round  {
+    border-radius: 100%;
+}
+.items .black {
+    background: black;
+}
+.items .black > * {
+    color: white;
+}
+.items .green {
+    background: #32edad;
+}
+.items .green > * {
+    color: black;
+}
+.items .red {
+    background: #ff3669;
+}
+.items .red > * {
+    color: white;
+}
+.items .violet {
+    background: #662284;
+}
+.items .violet > * {
+    color: white;
+}
+.items .white {
+    background: white;
+    border:1px solid #eee;
+}
+.items li.white {
+    width: 198px;
+    height: 198px;
+}
+.items div.white {
+    width: 398px;
+    height: 398px;
+}
+.items .white > * {
+    color: black;
+}
+.items .uppercase {
+    text-transform: uppercase;
+}
+.items .sans {
+    font-family: 'Open Sans', sans;
+
+}
+.items .serif {                
+    font-family: 'Merriweather', serif;
+}
+.items .normal {
+    font-weight: 300;
+}
+.items .bold {
+    font-weight: 900;
+}
+.items li.hide {
+    display: none;
+}
+.items > div > *{ 
+    width: 100%;
+    height: 100%;
+    line-height: 400px;
+    font-size: 200px;
+}
+.items > div {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+        
+}
+.items .likes:after {
+}
+.items .likes {
+    position: absolute;
+    left: 5px;
+    top:5px;
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 20px;
+    background: white;
+    padding: 0 5px;
+    color: black;
+    font-family: 'Open Sans', sans;
+    font-weight: 900;
+    text-transform: none;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.items .likes > span {
+    color: #ff3669;
+}
+#item .items {
+    margin: 0 auto;
+    transition: all;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    
+    z-index: 1;
+}
+
+#item .items.initial {
+    transform: scale(4);
+}
+#item .actions {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -19px;
+    margin-left: 172px;
+}
+#item .likeBtn {
+    line-height: 38px;
+    border-radius: 20px;
+    padding: 0 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
+   
+    display: inline-block;
+    font-weight: bold;
+    color: #ff3669;
+}
+#item .likeBtn:after {
+    content:" Like";
+    color: black;
+}
+#item .likeBtn.liked {
+    background: #ff3669;
+    color: white;
+    border: 1px solid #ff3669;
+    font-size: 1.5em;
+}
+#item .likeBtn.liked:after {
+    content:"";
+}
+#item .stats {
+    margin-left: 40px;
+    margin-top: 12px;
+}
+.backBtn {
+    background: #000;
+    color: white;
+    padding: 0 15px;
+    font-weight: 900;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 20px;
+    display: inline-block;
+}
